@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <style>
+
+        table{
+
+            margin: 5px auto 5px auto;
+
+ 
+
+        }
+
+        section>h3{
+
+            text-align: center;
+
+        }
+
+        section{
+
+            border: 2px solid darkslategrey;
+
+            margin: 5px;
+
+        }
+
+ 
+
+        .tablakeret{
+
+            border: 1px solid darkslategrey;
+
+        }
+
+        .sorkeret{
+
+            border: 1px solid darkslategrey;
+
+        }
+
+        .cellakeretezett td{
+
+            border: 1px solid black;
+
+        }
+
+        .egyvonalas{
+
+            border-collapse: collapse;
+
+        }
+
+        .borderradius{
+
+            border-radius: 10px;
+
+        }
+        table.borderradius, table.borderradius td{
+            border-radius: 10px;
+        }
+        .fixcellameret td{
+            border-color: red;
+            width: 30px;
+            height: 30px;
+            border-width: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section>
+
+        <h3>Alap tábla</h3>
+
+    <table>
+
+   
+
+        <tr>
+
+            <td>1</td>
+
+            <td>2</td>
+
+            <td>3</td>
+
+        </tr>
+
+        <tr>
+
+            <td>4</td>
+
+            <td>5</td>
+
+            <td>6</td>
+
+        </tr>
+
+    </table>
+
+    </section>
+
+    <section>
+
+        <h3>Keretes tábla</h3>
+
+    <table class="tablakeret">
+
+   
+
+        <tr>
+
+            <td>1</td>
+
+            <td>2</td>
+
+            <td>3</td>
+
+        </tr>
+
+        <tr>
+
+            <td>4</td>
+
+            <td>5</td>
+
+            <td>6</td>
+
+        </tr>
+
+    </table>
+
+    </section>
+
+    <section>
+
+        <h3>Cellák keresztezése</h3>
+
+    <table class="cellakeretezett">
+
+   
+
+        <tr>
+
+            <td>1</td>
+
+            <td>2</td>
+
+            <td>3</td>
+
+        </tr>
+
+        <tr>
+
+            <td>4</td>
+
+            <td>5</td>
+
+            <td>6</td>
+
+        </tr>
+
+    </table>
+
+    </section>
+
+    <section>
+
+        <h3>Táblák és cellák keresztezése</h3>
+
+    <table class="tablakeret cellakeretezett">
+
+   
+
+        <tr>
+
+            <td>1</td>
+
+            <td>2</td>
+
+            <td>3</td>
+
+        </tr>
+
+        <tr>
+
+            <td>4</td>
+
+            <td>5</td>
+
+            <td>6</td>
+
+        </tr>
+
+    </table>
+
+    </section>
+
+    <section>
+
+        <h3>Táblák és cellák keresztezése, dubla vonalazás nélkül</h3>
+
+    <table class="cellakeretezett egyvonalas">
+
+   
+
+        <tr>
+
+            <td>1</td>
+
+            <td>2</td>
+
+            <td>3</td>
+
+        </tr>
+
+        <tr>
+
+            <td>4</td>
+
+            <td>5</td>
+
+            <td>6</td>
+
+        </tr>
+
+    </table>
+
+    </section>
+
+    <section>
+
+        <h3>border-radius</h3>
+
+    <table class="borderradius cellakeretezett tablakeret">
+
+   
+
+        <tr>
+
+            <td>1</td>
+
+            <td>2</td>
+
+            <td>3</td>
+
+        </tr>
+
+        <tr>
+
+            <td>4</td>
+
+            <td>5</td>
+
+            <td>6</td>
+
+        </tr>
+
+    </table>
+
+    </section>
+
+    <section>
+            <h3>border-style</h3>
+    <table class="cellakeretezett fixcellameret">
+            <tr>
+        <td style="border-style: dotted;"></td>
+        <td style="border-style: dashed;"></td>
+        <td style="border-style: solid;"></td>
+    </tr>
+    <tr>
+    <td style="border-style: double;"></td>
+    <td style="border-style: groove;"></td>
+    <td style="border-style: ridge;"></td>
+    </tr>
+    <tr>
+        <td style="border-style: inset;"></td>
+        <td style="border-style: outset;"></td>
+        <td style="border-style: hidden;"></td>
+        </tr>
+   </table>
+   </section>
+   
+
+
+   section>h3>table>tr>td*3
+
+</body>
+
+</html>
